@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+@keyframes floatHerb {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50%      { transform: translateY(-15px) rotate(8deg); }
+}
+
+@keyframes leafSway {
+  0%, 100% { transform: rotate(-10deg); }
+  50%      { transform: rotate(10deg); }
+}
+
+@keyframes taskIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float-herb { animation: floatHerb 6s ease-in-out infinite; }
+.animate-leaf-sway { animation: leafSway 3s ease-in-out infinite; }
+.animate-task-in { animation: taskIn 0.3s ease; }
